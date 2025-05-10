@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Đồ Tiêu Thụ Điện Năng</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Liên kết với file CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Thư viện Chart.js -->
+</head>
+<body>
+    <div id="header">
+        <h1>Biểu Đồ Tiêu Thụ Điện Năng</h1>
+    </div>
+
+    <div id="content">
+        <div class="bieudo">
+            <canvas id="bieudo1"></canvas>
+            <h3>Phòng 1</h3>
+        </div>
+        <div class="bieudo">
+            <canvas id="bieudo2"></canvas>
+            <h3>Phòng 2</h3>
+        </div>
+        <div class="bieudo">
+            <canvas id="bieudo3"></canvas>
+            <h3>Phòng 3</h3>
+        </div>
+        <div class="bieudo">
+            <canvas id="bieudo4"></canvas>
+            <h3>Phòng 4</h3>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="index.html" id="back-button">Quay về Trang Chính</a> <!-- Nút quay lại -->
+        <p>DO LE HUU TRI</p>
+        <p>VO NGUYEN THANH TRUNG</p>
+    </div>
+
+    <script>
+        function taoBieuDo(id, label, data, color) {
+            var ctx = document.getElementById(id).getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Tháng 11', 'Tháng 12', 'Tháng 1', 'Tháng 2', 'Tháng 3'],
+                    datasets: [{
+                        label: label,
+                        data: data,
+                        backgroundColor: color,
+                        borderColor: 'black',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Lượng điện tiêu thụ (kWh)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            ticks: {
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Thời gian',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            ticks: {
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        taoBieuDo('bieudo1', 'Phòng 1', [120, 150, 130, 140, 160], 'red');
+        taoBieuDo('bieudo2', 'Phòng 2', [100, 130, 125, 135, 145], 'blue');
+        taoBieuDo('bieudo3', 'Phòng 3', [110, 140, 120, 125, 135], 'green');
+        taoBieuDo('bieudo4', 'Phòng 4', [90, 120, 110, 115, 125], 'orange');
+    </script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+body{
+    font-family: tahoma;
+    font-size: 28px;
+    width: 1000px;
+    margin: 0 auto;
+    background-image: url("vuon.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+#header{
+    width: 1000px;
+    height: 70px;
+    background-image:url("f.jpg");
+    color: white;
+    text-align: center;
+    line-height: 70px;
+
+}
+#header #logo{
+    width: 65px;
+    height: 65px;
+    float: left;
+}
+
+#banner{
+
+    height: 50px;
+    width: 1000px;
+    background-image:url("a.jpg");
+}
+#main{
+    min-height: 740px;
+    width: 1000px; 
+    background-color: white;
+    background-image: url("phong3.jpg");
+    background-size: cover; 
+    background-position: center; 
+    
+}
+#main #top{
+   min-height: 315px;
+
+}
+#main #bot{
+    min-height: 200px;
+
+
+}
+#footer{
+    background: whitesmoke;
+    min-height: 45px;
+    width: 1000px;
+
+}
+#header ul{
+    margin: 0px;
+    padding: 0px;
+}
+#header ul li{
+    list-style: none;
+    float: right;
+    width: 90%;
+    font-size: 50px;
+}
+.tag
+{
+    width:100%;
+    height:60px;
+
+    
+}
+.tag button
+{
+    width: 10%  ;
+    height:50px;
+    font-size: 20px;
+   margin-left:10% ;
+   margin-right:2%;
+  
+}
+#footer ul{
+    margin: 0px;
+    padding: 0px;
+}
+#footer ul li{
+    list-style: none;
+    float: left;
+    width: 65%;
+    font-size: 15px;
+
+}
+
+
+#nd{
+    width: 100px;
+    height: 120px;
+    margin-left: 10%;
+    margin-top: 1%;
+    float: left;
+}
+img#nd1 
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+}
+h2 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    margin-left: 60%;
+    color: green;
+
+}
+
+
+
+#da{
+    width: 100px;
+    height: 120px;
+    margin-left: 20%;
+    float: left;
+    margin-top: 2%;
+}
+img#da1 
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+}
+h4 
+{
+    font-size: x-large;
+    width: 120px;
+    height: 30px;
+    margin-left: 70%;
+    color: green;
+}
+#lm{
+    width: 100px;
+    height: 120px;
+    margin-right: 17%;
+    margin-top: -0.7%;
+    float: right;
+}
+img#lm1 
+{
+    width: 120px;
+    height: 120px;
+    margin-right: 50%;
+}
+h6{
+    font-size: x-large;
+    width: 180px;
+    height: 30px;
+    margin-left: 10%;
+    color: green;
+}
+.thongso
+{
+    width: 90%;
+    height: 20%;
+    position: relative;
+    top:50%;
+    margin-left:0px ;
+}
+#nhietdo
+{
+
+    position: relative;
+ 
+    right:35%;
+    margin-top: 165px;
+    float: left;
+}
+#doam
+{
+    position: relative;
+    left: -7%;
+    margin-top: 165px;
+    float: left;
+}
+#khongkhi {
+    position: relative;
+    margin-top: 165px;
+    left: 10%;
+    float: right;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+#bot h1 {
+    width: 200px;
+    height: 225px;
+    display: inline-block;
+    border-style: inset;
+    margin-left: 9.5%;
+}
+#bot h1 h2
+{
+    width:100%;
+    height:10%;
+    background-color: beige; 
+}
+button 
+{
+    width: 60px;
+    height: 30px;
+    margin-left: 10%;
+    font-size: 20px;
+    font-family: revert;
+    margin-right: auto;
+
+}
+#bot h2{
+    float: left;
+    margin-left: 18%;
+    margin-top: -13%;
+    font-size: 20px;
+    font-family: tahoma;
+    color: black;
+}
+#bot h3{
+    float: left;
+    margin-left: 48.5%;
+    margin-top: -13%;
+    font-size: 20px;
+    font-family: tahoma;
+    color: black;
+}
+#bot h4{
+    float: left;
+    margin-left: 79.5%;
+    margin-top: -13%;
+    font-size: 20px;
+    font-family: tahoma;
+    color: black;
+}
+#time{
+    margin-left: 44%;
+    font-family: tahoma;
+}
+/* Định dạng phần chứa thiết bị */
+.devices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Định dạng từng thiết bị */
+.device {
+    text-align: center;
+    border: 2px solid transparent;
+    background: transparent;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.device img {
+    width: 100px;
+    height: 100px;
+}
+.tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.tag {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; 
+    margin: auto; 
+    padding: 10px 0;
+}
+.tag button {
+    flex: 1;
+    max-width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px; 
+    margin-top: -35px;
+}
+.tag button:hover {
+    background-color: #45a049; 
+}
+.control-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.control-buttons button {
+    width: 160px;
+    height: 50px;
+    display: inline-block; 
+    margin: 0 5px; 
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        background: #333;
+    }
+    nav ul li {
+        padding: 10px 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        color: yellow;
+    }
+.button-container {
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px; 
+    }
+    
+    .button-link {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 30px; 
+        font-size: 20px; 
+        font-weight: bold; 
+        text-decoration: none;
+        border-radius: 8px; 
+        text-align: center;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    }
+    .button-link:hover {
+        background-color: #45a049;
+    }
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 1000px;
+        background: rgba(0, 0, 0, 0.5); 
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    #footer ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+    
+    #footer ul li {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+    #name-container {
+        position: relative;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 8px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        background: transparent;
+    }
+    .on, .off {
+        width: 80px; 
+        height: 40px;
+        text-align: center;
+        line-height: 40px; 
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .on {
+        background-color: green;
+        color: white;
+    }
+    .off {
+        background-color: red; 
+        color: white;
+    }
+    .on:hover {
+        background-color: darkgreen;
+    }
+    
+    .off:hover {
+        background-color: darkred;
+    }
+    .device {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .device img {
+        width: 100px;
+        height: 100px;
+    }
+    .device p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .device button {
+        margin: 5px; 
+    }
+#right-panel {
+    position: absolute;
+    right: 20px;
+    top: 120px; 
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+#container {
+    display: flex;
+}
+
+#main {
+    flex-grow: 1;
+}
+
+#right-panel {
+    width: 350px; 
+    margin-left: 20px; 
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+#main {
+    flex: 3;
+}
+#right-panel {
+    flex: 1;
+    padding: 10px;
+    border-left: 2px solid #dddddd;
+}
+#chart-container {
+    width: 100%;
+    height: 300px;
+}
+#chart-container {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px; 
+    border: 2px solid #007bff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
